@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>jQuery-kisoMondai</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://code.jquery.com/jquery-3.4.1.js"
+  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+  crossorigin="anonymous"></script>
+</head>
+<body>
+  <h1>jQuery練習問題集</h1>
+  <section>
+    <h2>STEP01</h2>
+    <p id="step01">id属性にstep01とつくものの文字色を赤色にする</p>
+  </section>
+  <section>
+    <h2>STEP02</h2>
+    <ul id="step02">
+      <li id="step02-first">id属性にstep02-firstが設定されたli要素の文字を赤色にする</li>
+      <li id="step02-second">id属性にstep02-firstが設定されたli要素の文字を赤色にする</li>
+      <li id="step02-third">id属性にstep02-firstが設定されたli要素の文字を赤色にする</li>
+    </ul>
+  </section>
+  <section>
+    <h2>STEP03</h2>
+    <ul id="step03">
+        <li class="step03-first">class属性にstep03-secondが設定されたli要素の文字を赤色にする</li>
+        <li class="step03-second">class属性にstep03-secondが設定されたli要素の文字を赤色にする</li>
+        <li class="step03-third">class属性にstep03-secondが設定されたli要素の文字を赤色にする</li>
+      </ul>
+  </section>
+  <section>
+    <h2>STEP04</h2>
+    <ul id="step04">
+        <li class="step04-first"><strong>class属性に</strong>step04-firstの要素の内側にあるstrong要素の文字を赤色にする</li>
+        <li class="step04-second"><strong>class属性に</strong>step04-firstの要素の内側にあるstrong要素の文字を赤色にする</li>
+        <li class="step04-third"><strong>class属性に</strong>step04-firstの要素の内側にあるstrong要素の文字を赤色にする</li>
+      </ul>
+  </section>
+  <section>
+    <h2>STEP05</h2>
+    <ul id="step05">
+        <li class="step05-first"><strong>li要素内</strong>に含まれる<em>全ての要素</em>の文字を赤色にする</li>
+        <li class="step05-second">li要素内に含まれる<em>全ての要素</em>の文字を<strong>赤色</strong>にする</li>
+        <li class="step05-third"><strong>li要素内</strong>に含まれる全ての<em>要素</em>の文字を赤色にする</li>
+      </ul>
+  </section>
+  <section>
+    <h2>STEP06</h2>
+    <ul id="step06">
+        <li class="step06-first">class属性がstep06-firstとstep06-thirdのli要素の文字を赤色にする</li>
+        <li class="step06-second">class属性がstep06-firstとstep06-thirdのli要素の文字を赤色にする</li>
+        <li class="step06-third">class属性がstep06-firstとstep06-thirdのli要素の文字を赤色にする</li>
+      </ul>
+  </section>
+  <section>
+    <h2>STEP07</h2>
+    <ul id="step07">
+        <li class="step07-first">id属性がstep07のli要素の子要素の<strong>strong要素</strong>のみを赤文字にする</li>
+        <li class="step07-second">
+          <div>
+              id属性がstep07のli要素の子要素の<strong>strong要素</strong>のみを赤文字にする
+          </div>
+        </li>
+        <li class="step07-third">id属性がstep07のli要素の子要素の<strong>strong要素</strong>のみを赤文字にする</li>
+      </ul>
+  </section>
+  <section>
+    <h2>STEP08</h2>
+    <ul id="step08">
+      <li id="step08-first">id属性がstep08-secondの要素の次に出現するli要素を赤文字にする</li>
+      <li id="step08-second">id属性がstep08-secondの要素の次に出現するli要素を赤文字にする</li>
+      <li id="step08-third">id属性がstep08-secondの要素の次に出現するli要素を赤文字にする</li>
+    </ul>
+  </section>
+  <section>
+    <h2>STEP09</h2>
+    <ul class="step09">
+      <li>class属性がstep09の中の2つのul要素のそれぞれ最初のli要素のみを赤文字にする</li>
+      <li>class属性がstep09の中の2つのul要素のそれぞれ最初のli要素のみを赤文字にする</li>
+    </ul>
+    <ul>
+      <li>class属性がstep09の中の2つのul要素のそれぞれ最初のli要素のみを赤文字にする</li>
+      <li>class属性がstep09の中の2つのul要素のそれぞれ最初のli要素のみを赤文字にする</li>
+    </ul>
+    <ul class="step09">
+      <li>class属性がstep09の中の2つのul要素のそれぞれ最初のli要素のみを赤文字にする</li>
+      <li>class属性がstep09の中の2つのul要素のそれぞれ最初のli要素のみを赤文字にする</li>
+    </ul>
+  </section>
+  <section>
+    <h2>STEP10</h2>
+    <ul class="step10">
+        <li>class属性がstep10のul要素の中の最初以外のli要素を全て赤文字にする</li>
+        <li>class属性がstep10のul要素の中の最初以外のli要素を全て赤文字にする</li>
+    </ul>
+    <ul class="step10">
+      <li>class属性がstep10のul要素の中の最初以外のli要素を全て赤文字にする</li>
+      <li>class属性がstep10のul要素の中の最初以外のli要素を全て赤文字にする</li>
+    </ul>
+  </section>
+  <section>
+    <h2>STEP11</h2>
+    <ul id="step11">
+      <li id="step11-first">id属性がstep11の中のid属性がstep11-secondのli要素以降が全て赤文字になる</li>
+      <li id="step11-second">id属性がstep11の中のid属性がstep11-secondのli要素以降が全て赤文字になる</li>
+      <li id="step11-third">id属性がstep11の中のid属性がstep11-secondのli要素以降が全て赤文字になる</li>
+      <li id="step11-fourth">id属性がstep11の中のid属性がstep11-secondのli要素以降が全て赤文字になる</li>
+    </ul>
+  </section>
+  <section>
+    <h2>STEP12</h2>
+    <ul id="step12">
+      <li id="step12-first">id属性step12の中の空のli要素を赤文字にする</li>
+      <li id="step12-second"></li>
+      <li id="step12-third">id属性step12の中の空のli要素を赤文字にする</li>
+      <li id="step12-fourth"></li>
+    </ul>
+  </section>
+  <section>
+    <h2>STEP13</h2>
+    <ul id="step13">
+      <li>id属性step13の中の上から3番目のliのみ赤文字にする</li>
+      <li>id属性step13の中の上から3番目のliのみ赤文字にする</li>
+      <li>id属性step13の中の上から3番目のliのみ赤文字にする</li>
+      <li>id属性step13の中の上から3番目のliのみ赤文字にする</li>
+    </ul>
+  </section>
+  <section>
+    <h2>STEP14</h2>
+    <ul id="step14">
+      <li>id属性step14の中の上から3の倍数番目のliのみ赤文字にする</li>
+      <li>id属性step14の中の上から3の倍数番目のliのみ赤文字にする</li>
+      <li>id属性step14の中の上から3の倍数番目のliのみ赤文字にする</li>
+      <li>id属性step14の中の上から3の倍数番目のliのみ赤文字にする</li>
+      <li>id属性step14の中の上から3の倍数番目のliのみ赤文字にする</li>
+      <li>id属性step14の中の上から3の倍数番目のliのみ赤文字にする</li>
+    </ul>
+  </section>
+  <section>
+    <h2>STEP15</h2>
+    <ul id="step15">
+      <li>id属性step15の中の上から偶数番目のliのみ赤文字にする</li>
+      <li>id属性step15の中の上から偶数番目のliのみ赤文字にする</li>
+      <li>id属性step15の中の上から偶数番目のliのみ赤文字にする</li>
+      <li>id属性step15の中の上から偶数番目のliのみ赤文字にする</li>
+      <li>id属性step15の中の上から偶数番目のliのみ赤文字にする</li>
+      <li>id属性step15の中の上から偶数番目のliのみ赤文字にする</li>
+    </ul>
+  </section>
+  <section>
+    <h2>STEP16</h2>
+    <ul id="step16">
+      <li>id属性step16の中の上から奇数番目のliのみ赤文字にする</li>
+      <li>id属性step16の中の上から奇数番目のliのみ赤文字にする</li>
+      <li>id属性step16の中の上から奇数番目のliのみ赤文字にする</li>
+      <li>id属性step16の中の上から奇数番目のliのみ赤文字にする</li>
+      <li>id属性step16の中の上から奇数番目のliのみ赤文字にする</li>
+      <li>id属性step16の中の上から奇数番目のliのみ赤文字にする</li>
+    </ul>
+  </section>
+  <section>
+    <h2>STEP17</h2>
+    <ul id="step17">
+      <li>class属性がstep17の要素中の最後のli要素のみを赤文字にする</li>
+      <li>class属性がstep17の要素中の最後のli要素のみを赤文字にする</li>
+      <li>class属性がstep17の要素中の最後のli要素のみを赤文字にする</li>
+    </ul>
+  </section>
+  <section>
+    <h2>STEP18</h2>
+    <dl id="step18">
+      <dt>1.id属性STEP18の上から2番目のdt要素を赤文字にする</dt>
+      <dd>a.id属性STEP18の上から2番目のdt要素を赤文字にする</dd>
+      <dt>2.id属性STEP18の上から2番目のdt要素を赤文字にする</dt>
+      <dd>a.id属性STEP18の上から2番目のdt要素を赤文字にする</dd>
+      <dt>3.id属性STEP18の上から2番目のdt要素を赤文字にする</dt>
+      <dd>a.id属性STEP18の上から2番目のdt要素を赤文字にする</dd>
+    </dl>
+  </section>
+  <section>
+    <h2>STEP19</h2>
+    <dl id="step19">
+      <dt>1.id属性STEP19の下から3番目のdt要素を赤文字にする</dt>
+      <dd>a.id属性STEP19の下から3番目のdt要素を赤文字にする</dd>
+      <dt>2.id属性STEP19の下から3番目のdt要素を赤文字にする</dt>
+      <dd>a.id属性STEP19の下から3番目のdt要素を赤文字にする</dd>
+      <dt>3.id属性STEP19の下から3番目のdt要素を赤文字にする</dt>
+      <dd>a.id属性STEP19の下から3番目のdt要素を赤文字にする</dd>
+    </dl>
+  </section>
+  <section>
+    <h2>STEP20</h2>
+    <dl id="step20">
+      <dt>1.id属性STEP20の最初のdd要素を赤文字にする</dt>
+      <dd>a.id属性STEP20の最初のdd要素を赤文字にする</dd>
+      <dt>2.id属性STEP20の最初のdd要素を赤文字にする</dt>
+      <dd>a.id属性STEP20の最初のdd要素を赤文字にする</dd>
+      <dt>3.id属性STEP20の最初のdd要素を赤文字にする</dt>
+      <dd>a.id属性STEP20の最初のdd要素を赤文字にする</dd>
+    </dl>
+  </section>
+  <section>
+    <h2>STEP21</h2>
+    <dl id="step21">
+      <dt>1.id属性STEP21の最後のdd要素を赤文字にする</dt>
+      <dd>a.id属性STEP21の最後のdd要素を赤文字にする</dd>
+      <dt>2.id属性STEP21の最後のdd要素を赤文字にする</dt>
+      <dd>a.id属性STEP21の最後のdd要素を赤文字にする</dd>
+      <dt>3.id属性STEP21の最後のdd要素を赤文字にする</dt>
+      <dd>a.id属性STEP21の最後のdd要素を赤文字にする</dd>
+    </dl>
+  </section>
+  <button id="js-btn">click</button>
+</body>
+<script type="text/javascript" src="jquery-kiso.js"></script>
+</html>

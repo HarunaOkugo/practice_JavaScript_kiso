@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://code.jquery.com/jquery-3.4.1.js"
+  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+  crossorigin="anonymous"></script>
+  <title>タブ練習</title>
+</head>
+<body>
+  <h2 class="heading-title l-bottom-small">おすすめの<br>引越し業者ランキング一覧</h2>
+  <section class="section-container">
+    <p>引っ越し業者の選び方に困ったら、引越し侍が紹介する引越し業者ランキングを参考にしてください。</p>
+  </section>
+  <div class="tab-line-container">
+    <ul id="js-tabs" class="tab">
+      <li data-index="0" class="is-active">
+        <a herf class="tab-anchor">安い<br>引越し業者</a>
+      </li>
+      <li data-index="1">
+        <a href class="tab-anchor">単身の<br>引っ越し</a>
+      </li>
+      <li data-index="2">
+        <a href class="tab-anchor">家族の<br>引っ越し業者</a>
+      </li>
+    </ul>
+  </div>
+  <section class="section-container">
+    <div class="js-contents">
+      <h3 class="heading-company-major l-bottom-small">大手引越し業者</h3>
+      <table class="ranking-table l-bottom-medium">
+        <thead>
+          <tr>
+            <th>引越し業者名</th>
+            <th>相場</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th>
+              <div class="l-ranking-table-company">
+                <div class="ranking-order ranking-order-1 l-right-xsmall">
+                 <span>1</span>
+                </div>
+                <img src="images/hikkoshi8100_logo.gif" class="l-logo-small logo-line-container l-right-xsmall">
+                <a href="#" class="text-anchor">ハート引越しセンター</a>
+              </div>
+            </th>
+            <td class="text-table-accent aline-right">30,000<span class="ranking-text-small">円</span></td>
+          </tr>
+          <tr>
+            <th>
+              <div class="l-ranking-table-company">
+                <div class="ranking-order ranking-order-2 l-right-xsmall">
+                 <span>2</span>
+                </div>
+                <img src="images/2626co_logo.gif" class="l-logo-small logo-line-container l-right-xsmall">
+                <a href="#" class="text-anchor">アリさんマークの引越社</a>
+              </div>
+            </th>
+            <td class="text-table-accent aline-right">33,500<span class="ranking-text-small">円</span></td>
+          </tr>
+          <tr>
+            <th>
+              <div class="l-ranking-table-company">
+                <div class="ranking-order ranking-order-3 l-right-xsmall">
+                 <span>3</span>
+                </div>
+                <img src="images/0003co_logo.gif" class="l-logo-small logo-line-container l-right-xsmall">
+                <a href="#" class="text-anchor">アーク引越しセンター</a>
+              </div>
+            </th>
+            <td class="text-table-accent aline-right">35,000<span class="ranking-text-small">円</span></td>
+          </tr>
+        </tbody>
+      </table>
+      <h3 class="heading-company-local l-bottom-small">中小の引越し業者</h3>
+      <table class="ranking-table">
+        <thead>
+          <tr>
+            <th>引越し業者名</th>
+            <th>相場</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th>
+              <div class="l-ranking-table-company">
+                <div class="ranking-order ranking-order-1 l-right-xsmall">
+                 <span>1</span>
+                </div>
+                <img src="images/kuryu_logo.gif" class="l-logo-small logo-line-container l-right-xsmall">
+                <a href="#" class="text-anchor">KURYU引越専門店</a>
+              </div>
+            </th>
+            <td class="text-table-accent aline-right">11,000<span class="ranking-text-small">円</span></td>
+          </tr>
+          <tr>
+            <th>
+              <div class="l-ranking-table-company">
+                <div class="ranking-order ranking-order-2 l-right-xsmall">
+                 <span>2</span>
+                </div>
+                <img src="images/takarajima_logo.gif" class="l-logo-small logo-line-container l-right-xsmall">
+                <a href="#" class="text-anchor">宝島引越センター</a>
+              </div>
+            </th>
+            <td class="text-table-accent aline-right">15,000<span class="ranking-text-small">円</span></td>
+          </tr>
+          <tr>
+            <th>
+              <div class="l-ranking-table-company">
+                <div class="ranking-order ranking-order-3 l-right-xsmall">
+                 <span>3</span>
+                </div>
+                <img src="images/honpo1_logo.gif" class="l-logo-small logo-line-container l-right-xsmall">
+                <a href="#" class="text-anchor">引越屋本舗</a>
+              </div>
+            </th>
+            <td class="text-table-accent aline-right">18,000<span class="ranking-text-small">円</span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="js-contents">
+      <h3 class="heading-company-major l-bottom-small">大手引越し業者</h3>
+      <table class="ranking-table l-bottom-medium">
+        <thead>
+          <tr>
+            <th>引越し業者名</th>
+            <th>評価</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th>
+              <div class="l-ranking-table-company">
+                <div class="ranking-order ranking-order-1 l-right-xsmall">
+                 <span>1</span>
+                </div>
+                <img src="images/0003co_logo.gif" class="l-logo-small logo-line-container l-right-xsmall">
+                <a href="#" class="text-anchor">アーク引越しセンター</a>
+              </div>
+            </th>
+            <td class="text-table-accent aline-center">4.37</td>
+          </tr>
+          <tr>
+            <th>
+              <div class="l-ranking-table-company">
+                <div class="ranking-order ranking-order-2 l-right-xsmall">
+                 <span>2</span>
+                </div>
+                <img src="images/sakaico_logo.gif" class="l-logo-small logo-line-container l-right-xsmall">
+                <a href="#" class="text-anchor">サカイ引越センター</a>
+              </div>
+            </th>
+            <td class="text-table-accent aline-center">4.33</td>
+          </tr>
+          <tr>
+            <th>
+              <div class="l-ranking-table-company">
+                <div class="ranking-order ranking-order-3 l-right-xsmall">
+                 <span>3</span>
+                </div>
+                <img src="images/the0123_logo.gif" class="l-logo-small logo-line-container l-right-xsmall">
+                <a href="#" class="text-anchor">アート引越センター</a>
+              </div>
+            </th>
+            <td class="text-table-accent aline-center">4.31</td>
+          </tr>
+        </tbody>
+      </table>
+      <h3 class="heading-company-local l-bottom-small">中小の引越し業者</h3>
+      <table class="ranking-table">
+        <thead>
+          <tr>
+            <th>引越し業者名</th>
+            <th>評価</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th>
+              <div class="l-ranking-table-company">
+                <div class="ranking-order ranking-order-1 l-right-xsmall">
+                 <span>1</span>
+                </div>
+                <img src="images/shimotsutr_logo.gif" class="l-logo-small logo-line-container l-right-xsmall">
+                <a href="#" class="text-anchor">シモツ引越サービス</a>
+              </div>
+            </th>
+            <td class="text-table-accent aline-center">4.70</td>
+          </tr>
+          <tr>
+            <th>
+              <div class="l-ranking-table-company">
+                <div class="ranking-order ranking-order-2 l-right-xsmall">
+                 <span>2</span>
+                </div>
+                <img src="images/megumi_logo.gif" class="l-logo-small logo-line-container l-right-xsmall">
+                <a href="#" class="text-anchor">アクティブ感動引越センター</a>
+              </div>
+            </th>
+            <td class="text-table-accent aline-center">4.61</td>
+          </tr>
+          <tr>
+            <th>
+              <div class="l-ranking-table-company">
+                <div class="ranking-order ranking-order-3 l-right-xsmall">
+                 <span>3</span>
+                </div>
+                <img src="images/pueblo_logo.gif" class="l-logo-small logo-line-container l-right-xsmall">
+                <a href="#" class="text-anchor">プエブロ引越センター</a>
+              </div>
+            </th>
+            <td class="text-table-accent aline-center">4.61</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="js-contents">
+      <h3 class="heading-company-major l-bottom-small">大手引越し業者</h3>
+      <table class="ranking-table l-bottom-medium">
+        <thead>
+          <tr>
+            <th>引越し業者名</th>
+            <th>評価</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th>
+              <div class="l-ranking-table-company">
+                <div class="ranking-order ranking-order-1 l-right-xsmall">
+                 <span>1</span>
+                </div>
+                <img src="images/sakaico_logo.gif" class="l-logo-small logo-line-container l-right-xsmall">
+                <a href="#" class="text-anchor">サカイ引越センター</a>
+              </div>
+            </th>
+            <td class="text-table-accent aline-center">4.32</td>
+          </tr>
+          <tr>
+            <th>
+              <div class="l-ranking-table-company">
+                <div class="ranking-order ranking-order-2 l-right-xsmall">
+                 <span>2</span>
+                </div>
+                <img src="images/the0123_logo.gif" class="l-logo-small logo-line-container l-right-xsmall">
+                <a href="#" class="text-anchor">アート引越センター</a>
+              </div>
+            </th>
+            <td class="text-table-accent aline-center">4.28</td>
+          </tr>
+          <tr>
+            <th>
+              <div class="l-ranking-table-company">
+                <div class="ranking-order ranking-order-3 l-right-xsmall">
+                 <span>3</span>
+                </div>
+                <img src="images/0003co_logo.gif" class="l-logo-small logo-line-container l-right-xsmall">
+                <a href="#" class="text-anchor">アーク引越しセンター</a>
+              </div>
+            </th>
+            <td class="text-table-accent aline-center">4.27</td>
+          </tr>
+        </tbody>
+      </table>
+      <h3 class="heading-company-local l-bottom-small">中小の引越し業者</h3>
+      <table class="ranking-table">
+        <thead>
+          <tr>
+            <th>引越し業者名</th>
+            <th>相場</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th>
+              <div class="l-ranking-table-company">
+                <div class="ranking-order ranking-order-1 l-right-xsmall">
+                 <span>1</span>
+                </div>
+                <img src="images/hikkoshi8100_logo.gif" class="l-logo-small logo-line-container l-right-xsmall">
+                <a href="#" class="text-anchor">九州・山口/離島引越レスキュー隊・中村引越センター</a>
+              </div>
+            </th>
+            <td class="text-table-accent aline-center">4.86</td>
+          </tr>
+          <tr>
+            <th>
+              <div class="l-ranking-table-company">
+                <div class="ranking-order ranking-order-2 l-right-xsmall">
+                 <span>2</span>
+                </div>
+                <img src="images/2626co_logo.gif" class="l-logo-small logo-line-container l-right-xsmall">
+                <a href="#" class="text-anchor">引越のドリーム</a>
+              </div>
+            </th>
+            <td class="text-table-accent aline-center">4.66</td>
+          </tr>
+          <tr>
+            <th>
+              <div class="l-ranking-table-company">
+                <div class="ranking-order ranking-order-3 l-right-xsmall">
+                 <span>3</span>
+                </div>
+                <img src="images/0003co_logo.gif" class="l-logo-small logo-line-container l-right-xsmall">
+                <a href="#" class="text-anchor">アップル引越センター</a>
+              </div>
+            </th>
+            <td class="text-table-accent aline-center">4.65</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+</body>
+<script type="text/javascript" src="tab.js"></script>
+</html>
