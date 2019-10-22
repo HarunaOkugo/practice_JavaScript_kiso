@@ -1,0 +1,128 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>テンプレート</title>
+<link href="_common/images/favicon.ico" rel="shortcut icon">
+<link href="https://fonts.googleapis.com/css?family=M+PLUS+1p:400,500" rel="stylesheet">
+<link href="_common/css/style.css" rel="stylesheet">
+<style>
+  section img{
+    max-width: 100%;
+  }
+
+  .center{
+    margin: 0 auto ;
+    max-width: 90%;
+    width: 500px;
+  }
+
+  ul{
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+  }
+
+  li{
+    flex: 1 1 auto;
+    margin-right: 8px;
+  }
+
+  li:last-of-type{
+    margin-right: 0;
+  }
+</style>
+</head>
+<body>
+<header>
+<div class="container">
+<h1>イメージの切り替え</h1>
+<h2>画像を切り替える</h2>
+</div><!-- /.container -->
+</header>
+<main>
+<div class="container">
+<section>
+  <div class="center">
+    <div><img src="img1.jpg" id="bigimg"></div>
+    <ul>
+      <li><img src="thumb-img1.jpg" alt="" class="thumb" data-image="img1.jpg"> </li>
+      <li><img src="thumb-img2.jpg" alt="" class="thumb" data-image="img2.jpg"> </li>
+      <li><img src="thumb-img3.jpg" alt="" class="thumb" data-image="img3.jpg"> </li>
+      <li><img src="thumb-img4.jpg" alt="" class="thumb" data-image="img4.jpg"> </li>
+    </ul>
+  </div>
+  <button id="savebtn1">セーブ1:おおくご</button>
+  <button id="savebtn2">セーブ2:すずき</button>
+</section>
+</div><!-- /.container -->
+</main>
+<footer>
+<div class="container">
+<p>JavaScript Samples</p>
+</div><!-- /.container -->
+</footer>
+<script>
+  'use strict';
+
+  const thumbs = document.querySelectorAll('.thumb');
+  thumbs.forEach(function(item, index){
+    item.addEventListener('click', function() {
+      document.getElementById('bigimg').src = this.dataset.image;
+    });
+  });
+
+
+  //obj1の中でプロパティ名がuserで値が大國護のobj1を作る
+  const obj1 = {
+    user : 'okugo',
+    backgroundColor : '#F44336'
+  };
+  const obj2 = {
+    user : 'suzuki',
+    backgroundColor : '#f48539'
+  };
+  console.log(obj1)
+
+  //savedataにobj1.2を入れる
+  const savedata = [obj1, obj2];
+  console.log(savedata);
+  //savedata配列からobj2を取り出す
+  const data = savedata[0];
+  console.log(data.user);
+
+  //セーブ1をクリックしたらokugoを取り出して、２をクリックしたら鈴木を取り出す
+  const savebtn1 = document.getElementById('savebtn1');
+  savebtn1.addEventListener('click',function(){
+    const okugodata = savedata[0];
+    console.log(okugodata.user);
+    console.log(okugodata.backgroundColor);
+    //DOMのコンテナーを取得してconsoleに出す
+    const containers = document.getElementsByClassName('container');
+    //2番目のコンテナのバックグラウンドカラーを赤にする
+    const secondcontainer = containers[1];
+    secondcontainer.style.backgroundColor = okugodata.backgroundColor;
+  });
+  const savebtn2 = document.getElementById('savebtn2');
+  savebtn2.addEventListener('click',function(){
+    const suzukidata = savedata[1];
+    const container = document.getElementsByClassName('container');
+    const secondcontainer = containers[1];
+    secondcontainer.style.backgroundColor = suzukidata.backgroundColor;
+  });
+
+  //DOM取得して＝ document.から始まる可能性が高い
+  console.log(document);
+
+  //DOMのコンテナーを取得してconsoleに出す
+  const containers = document.getElementsByClassName('container');
+  //2番目のコンテナのバックグラウンドカラーを赤にする
+ /* const secondcontainer = containers[1];
+  secondcontainer.style.backgroundColor="#F44336";
+  console.log(secondcontainer); */
+  //クリックされたら色変わる：save1→赤,save2→青
+</script>
+</body>
+</html>
